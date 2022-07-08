@@ -1,0 +1,187 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: absolute;
+  width: 450px;
+  height: 609px;
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
+
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  padding: 40px;
+
+  &__close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    @extend %align;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  &__title {
+    @include font(700, 20px, 30px, 0.03em);
+    @media screen and (min-width: 1200px) {
+      @include font(700, 20px, 23px, 0.03em);
+    }
+    text-align: center;
+    margin-bottom: 2px;
+
+    color: var(--title-text-color);
+  }
+  &__field {
+    margin-top: 10px;
+    &_key {
+      display: block;
+      @include font(400, 12px, 14px, 0.01em);
+      margin-bottom: 4px;
+
+      color: var(--text-color);
+    }
+  }
+  &__input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+      outline: none;
+      border-color: var(--accent-color);
+    }
+
+    &_wrapper {
+      position: relative;
+      display: block;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    display: block;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .modal-form__input:focus + & {
+      fill: var(--accent-color);
+    }
+  }
+
+  &__message {
+    display: block;
+    resize: none;
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &::placeholder {
+      @include font(400, 12px, 14px, 0.01em);
+
+      color: rgba(117, 117, 117, 0.5);
+    }
+
+    &:focus {
+      outline: none;
+      border-color: var(--accent-color);
+    }
+  }
+}
+
+.modal-form__checkbox_label {
+  @extend %align;
+  @include font(400, 12px, 14px, 0.03em);
+  @media screen and (min-width: 1200px) {
+    @include font(400, 14px, 24px, 0.03em);
+  }
+  margin-top: 20px;
+
+  color: var(--text-color);
+  &::before {
+    display: flex;
+    content: "";
+    width: 16px;
+    height: 15px;
+    border-radius: 2px;
+    background-image: url("../images/border-icon.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    margin-right: 8px;
+    @media screen and (min-width: 1200px) {
+      margin-right: 7px;
+    }
+    .modal-form__checkbox:checked + & {
+      background-image: url("../images/checked-icon.svg");
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
+    }
+    .modal-form__checkbox:focus + & {
+      outline: 1px solid var(--accent-color);
+    }
+  }
+}
+
+.modal-form__checkbox_link {
+  color: var(--accent-color);
+}
+
+.modal-form__button {
+  min-width: 200px;
+  align-self: center;
+  @include font(700, 16px, 30px, 0.06em);
+
+  color: var(--primary-background-color);
+  background: var(--accent-color);
+  border-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  cursor: pointer;
+  margin-top: 30px;
+  padding: 10px 55px 10px 56px;
+  @media screen and (min-width: 1200px) {
+    padding: 10px 32px;
+  }
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    border-color: transparent;
+  }
+}
