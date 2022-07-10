@@ -3,17 +3,10 @@
   flex-wrap: wrap;
   &__link {
     @extend %align;
-    width: 450px;
     height: 120px;
     border-radius: 4px;
     background: var(--portfolio-color-button);
     margin-bottom: 30px;
-    @media screen and (min-width: 768px) {
-      width: 354px;
-    }
-    @media screen and (min-width: 1200px) {
-      width: 270px;
-    }
   }
 
   &__title {
@@ -48,6 +41,8 @@
     flex-basis: calc((100% - 60px) / 2);
     &:not(:nth-child(2n)) {
       margin-right: 30px;
+    }
+    &:nth-child(-n + 2){
       margin-bottom: 30px;
     }
   }

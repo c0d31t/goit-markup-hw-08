@@ -9,7 +9,9 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
-    @media screen and (min-width: 1200px) {  
+      align-items: baseline;
+    @media screen and (min-width: 1200px) {
+      justify-content: start;  
                 align-items: baseline;
                 flex-wrap: nowrap;
               }
@@ -19,6 +21,7 @@
     text-align: left;
 
     &__navigation {
+      flex-grow: 1;
       display: flex;
       align-items: baseline;
       flex-direction: column;
@@ -64,6 +67,7 @@
     margin-top: 60px;
     @media screen and (min-width: 768px) {
       margin-top: 0;
+      margin-left: 70px;
     }
   }
 
@@ -100,6 +104,7 @@
   margin-top: 60px;
 @media screen and (min-width: 1200px){
     margin-top: 0;
+    margin-left: 93px;
 }
 }
 

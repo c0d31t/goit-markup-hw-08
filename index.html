@@ -82,7 +82,11 @@
           </button>
           <ul class="mobile-menu__list">
             <li class="mobile-menu__item">
-              <a href="./index.html" class="mobile-menu__link mobile-menu__link_current">Студия</a>
+              <a
+                href="./index.html"
+                class="mobile-menu__link mobile-menu__link_current"
+                >Студия</a
+              >
             </li>
             <li class="mobile-menu__item">
               <a href="./portfolio.html" class="mobile-menu__link">Портфолио</a>
@@ -91,34 +95,42 @@
               <a href="" class="mobile-menu__link">Контакты</a>
             </li>
           </ul>
-          <ul class="mobile-contact">
-            <li class="mobile-contact__item">
-              <a href="tel:+380961111111" class="mobile-contact__phone-number">
-                +38 096 111 11 11
-              </a>
-            </li>
-            <li class="mobile-contact__item">
-              <a href="mailto:info@devstudio.com" class="mobile-contact__mail">
-                info@devstudio.com
-              </a>
-            </li>
-          </ul>
-          <ul class="mobile-menu-social">
-            <li class="mobile-menu-social__item">
-              <a href="" class="mobile-menu-social__link">Instagram</a>
-            </li>
-            <li class="mobile-menu-social__item">
-              <a href="" class="mobile-menu-social__link">Twitter</a>
-            </li>
+          <div>
+            <ul class="mobile-contact">
+              <li class="mobile-contact__item">
+                <a
+                  href="tel:+380961111111"
+                  class="mobile-contact__phone-number"
+                >
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="mobile-contact__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mobile-contact__mail"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="mobile-menu-social">
+              <li class="mobile-menu-social__item">
+                <a href="" class="mobile-menu-social__link">Instagram</a>
+              </li>
+              <li class="mobile-menu-social__item">
+                <a href="" class="mobile-menu-social__link">Twitter</a>
+              </li>
 
-            <li class="mobile-menu-social__item">
-              <a href="" class="mobile-menu-social__link">Facebook</a>
-            </li>
+              <li class="mobile-menu-social__item">
+                <a href="" class="mobile-menu-social__link">Facebook</a>
+              </li>
 
-            <li class="mobile-menu-social__item">
-              <a href="" class="mobile-menu-social__link">LinkedIn</a>
-            </li>
-          </ul>
+              <li class="mobile-menu-social__item">
+                <a href="" class="mobile-menu-social__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -136,8 +148,8 @@
         </div>
       </section>
 
-    <!-- Особенности -->
-    <section class="section">
+      <!-- Особенности -->
+      <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Наши особенности</h2>
           <ul class="specialization">
@@ -192,8 +204,8 @@
           </ul>
         </div>
       </section>
-    <!-- Чем мы занимаемся -->
-    <section class="work section_no-padding-top">
+      <!-- Чем мы занимаемся -->
+      <section class="work section_no-padding-top">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="our-work">
@@ -228,37 +240,49 @@
         </div>
       </section>
 
-    <!-- Наша команда -->
-    <section class="section section__other-background">
+      <!-- Наша команда -->
+      <section class="section section__other-background">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class="our-team">
             <li class="our-team__item">
               <picture>
-                <source 
-                srcset="./images/team/demian-desktop.webp 1x, ./images/team/demian-desktop@2x.webp 2x"
-                media="(min-width: 1200px)"
-                type="images/webp"
+                <source
+                  srcset="
+                    ./images/team/demian-desktop.webp    1x,
+                    ./images/team/demian-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="images/webp"
                 />
-                <source 
-                srcset="./images/team/demian-desktop.jpg 1x, ./images/team/demian-desktop@2x.jpg 2x"
-                media="(min-width: 1200px)"
+                <source
+                  srcset="
+                    ./images/team/demian-desktop.jpg    1x,
+                    ./images/team/demian-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
                 />
 
-                <source 
-                srcset="./images/team/demian-tablet.webp 1x, ./images/team/demian-tablet@2x.webp 2x"
-                media="(min-width: 768px)"
-                type="images/webp"
+                <source
+                  srcset="
+                    ./images/team/demian-tablet.webp    1x,
+                    ./images/team/demian-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="images/webp"
                 />
-                <source 
-                srcset="./images/team/demian-tablet.jpg 1x, ./images/team/demian-tablet@2x.jpg 2x"
-                media="(min-width: 768px)"
+                <source
+                  srcset="
+                    ./images/team/demian-tablet.jpg    1x,
+                    ./images/team/demian-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
                 />
                 <img
-                src="./images/team/demian-mobile.jpg"
-                alt="Игорь Демьяненко"
-                class="team-img"
-              />
+                  src="./images/team/demian-mobile.jpg"
+                  alt="Игорь Демьяненко"
+                  class="team-img"
+                />
               </picture>
               <div class="our-team__card">
                 <h3 class="our-team__title">Игорь Демьяненко</h3>
@@ -298,30 +322,42 @@
 
             <li class="our-team__item">
               <picture>
-                <source 
-                srcset="./images/team/repina-desktop.webp 1x, ./images/team/repina-desktop@2x.webp 2x"
-                media="(min-width: 1200px)"
-                type="images/webp"
+                <source
+                  srcset="
+                    ./images/team/repina-desktop.webp    1x,
+                    ./images/team/repina-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="images/webp"
                 />
-                <source 
-                srcset="./images/team/repina-desktop.jpg 1x, ./images/team/repina-desktop@2x.jpg 2x"
-                media="(min-width: 1200px)"
+                <source
+                  srcset="
+                    ./images/team/repina-desktop.jpg    1x,
+                    ./images/team/repina-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
                 />
 
-                <source 
-                srcset="./images/team/repina-tablet.webp 1x, ./images/team/repina-tablet@2x.webp 2x"
-                media="(min-width: 768px)"
-                type="images/webp"
+                <source
+                  srcset="
+                    ./images/team/repina-tablet.webp    1x,
+                    ./images/team/repina-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="images/webp"
                 />
-                <source 
-                srcset="./images/team/repina-tablet.jpg 1x, ./images/team/repina-tablet@2x.jpg 2x"
-                media="(min-width: 768px)"
+                <source
+                  srcset="
+                    ./images/team/repina-tablet.jpg    1x,
+                    ./images/team/repina-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
                 />
                 <img
-                src="./images/team/repina-mobile.jpg"
-                alt="Ольга Репина"
-                class="team-img"
-              />
+                  src="./images/team/repina-mobile.jpg"
+                  alt="Ольга Репина"
+                  class="team-img"
+                />
               </picture>
               <div class="our-team__card">
                 <h3 class="our-team__title">Ольга Репина</h3>
@@ -361,30 +397,42 @@
 
             <li class="our-team__item">
               <picture>
-                <source 
-                srcset="./images/team/tarasov-desktop.webp 1x, ./images/team/tarasov-desktop@2x.webp 2x"
-                media="(min-width: 1200px)"
-                type="images/webp"
+                <source
+                  srcset="
+                    ./images/team/tarasov-desktop.webp    1x,
+                    ./images/team/tarasov-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="images/webp"
                 />
-                <source 
-                srcset="./images/team/tarasov-desktop.jpg 1x, ./images/team/tarasov-desktop@2x.jpg 2x"
-                media="(min-width: 1200px)"
+                <source
+                  srcset="
+                    ./images/team/tarasov-desktop.jpg    1x,
+                    ./images/team/tarasov-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
                 />
 
-                <source 
-                srcset="./images/team/tarasov-tablet.webp 1x, ./images/team/tarasov-tablet@2x.webp 2x"
-                media="(min-width: 768px)"
-                type="images/webp"
+                <source
+                  srcset="
+                    ./images/team/tarasov-tablet.webp    1x,
+                    ./images/team/tarasov-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="images/webp"
                 />
-                <source 
-                srcset="./images/team/tarasov-tablet.jpg 1x, ./images/team/tarasov-tablet@2x.jpg 2x"
-                media="(min-width: 768px)"
+                <source
+                  srcset="
+                    ./images/team/tarasov-tablet.jpg    1x,
+                    ./images/team/tarasov-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
                 />
                 <img
-                src="./images/team/tarasov-mobile.jpg"
-                alt="Николай Тарасов"
-                class="team-img"
-              />
+                  src="./images/team/tarasov-mobile.jpg"
+                  alt="Николай Тарасов"
+                  class="team-img"
+                />
               </picture>
               <div class="our-team__card">
                 <h3 class="our-team__title">Николай Тарасов</h3>
@@ -424,30 +472,42 @@
 
             <li class="our-team__item">
               <picture>
-                <source 
-                srcset="./images/team/ermakov-desktop.webp 1x, ./images/team/ermakov-desktop@2x.webp 2x"
-                media="(min-width: 1200px)"
-                type="images/webp"
+                <source
+                  srcset="
+                    ./images/team/ermakov-desktop.webp    1x,
+                    ./images/team/ermakov-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="images/webp"
                 />
-                <source 
-                srcset="./images/team/ermakov-desktop.jpg 1x, ./images/team/ermakov-desktop@2x.jpg 2x"
-                media="(min-width: 1200px)"
+                <source
+                  srcset="
+                    ./images/team/ermakov-desktop.jpg    1x,
+                    ./images/team/ermakov-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
                 />
 
-                <source 
-                srcset="./images/team/ermakov-tablet.webp 1x, ./images/team/ermakov-tablet@2x.webp 2x"
-                media="(min-width: 768px)"
-                type="images/webp"
+                <source
+                  srcset="
+                    ./images/team/ermakov-tablet.webp    1x,
+                    ./images/team/ermakov-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="images/webp"
                 />
-                <source 
-                srcset="./images/team/ermakov-tablet.jpg 1x, ./images/team/ermakov-tablet@2x.jpg 2x"
-                media="(min-width: 768px)"
+                <source
+                  srcset="
+                    ./images/team/ermakov-tablet.jpg    1x,
+                    ./images/team/ermakov-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
                 />
                 <img
-                src="./images/team/ermakov-mobile.jpg"
-                alt="Михаил Ермаков"
-                class="team-img"
-              />
+                  src="./images/team/ermakov-mobile.jpg"
+                  alt="Михаил Ермаков"
+                  class="team-img"
+                />
               </picture>
               <div class="our-team__card">
                 <h3 class="our-team__title">Михаил Ермаков</h3>
@@ -487,8 +547,8 @@
           </ul>
         </div>
       </section>
-    <!-- Постоянные клиенты -->
-    <section class="section">
+      <!-- Постоянные клиенты -->
+      <section class="section">
         <div class="container">
           <h2 class="section__title">Постоянные клиенты</h2>
           <ul class="our-clients">
@@ -541,7 +601,7 @@
     <!-- Подвал -->
     <footer class="footer">
       <div class="container footer__container">
-    <div class="navigation footer__navigation">
+        <div class="navigation footer__navigation">
           <a href="/" lang="en" class="logo logo__footer"
             >Web<span class="logo__light">Studio</span></a
           >
@@ -569,8 +629,8 @@
             </ul>
           </address>
         </div>
-    <!--footer-social-->
-    <div class="footer-social__container">
+        <!--footer-social-->
+        <div class="footer-social__container">
           <h2 class="footer-social__text">присоединяйтесь</h2>
           <ul class="footer-social">
             <li class="footer-social__item">
@@ -603,8 +663,8 @@
             </li>
           </ul>
         </div>
-    <!--Mailing-->
-    <div class="mailing mailing__container">
+        <!--Mailing-->
+        <div class="mailing mailing__container">
           <h2 class="mailing__title">Подпишитесь на рассылку</h2>
           <form class="mailing__form">
             <label class="mailing__label" for="email"></label>
