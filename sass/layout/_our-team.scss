@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  
+
   &__card {
     align-items: center;
     justify-content: center;
@@ -20,10 +20,10 @@
     }
     @media screen and (min-width: 768px) {
       &:not(:last-child) {
-          margin-bottom: 0;
-        }
+        margin-bottom: 0;
+      }
       &:nth-child(-n + 2) {
-          margin-bottom: 30px;
+        margin-bottom: 30px;
       }
     }
   }
@@ -39,6 +39,10 @@
   @media screen and (min-width: 1200px) {
     &__item {
       flex-basis: calc((100% - 90px) / 4);
+
+      &:nth-child(-n + 2) {
+        margin-bottom: 0;
+      }
 
       &:not(:nth-child(4n)) {
         margin-right: 30px;

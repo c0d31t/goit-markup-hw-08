@@ -963,6 +963,9 @@ a {
   .our-team__item {
     flex-basis: calc((100% - 90px) / 4);
   }
+  .our-team__item:nth-child(-n+2) {
+    margin-bottom: 0;
+  }
   .our-team__item:not(:nth-child(4n)) {
     margin-right: 30px;
   }
