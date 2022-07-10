@@ -23,6 +23,12 @@
       border: 1px solid var(--accent-color);
     }
   }
+    @media screen and (max-width: 479px) {
+    &__item:not(:nth-last-child(-n + 1)) {
+      margin-bottom: 30px;
+    }
+  }
+    @media screen and (min-width: 480px){
   &__item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 30px;
   }
@@ -30,6 +36,7 @@
   &__item:not(:nth-child(2n)) {
     margin-right: 30px;
   }
+}
   @media screen and (min-width: 768px) {
     &__item:not(:nth-last-child(-n + 2)) {
       margin-bottom: 0;

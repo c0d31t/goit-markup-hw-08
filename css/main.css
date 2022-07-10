@@ -60,7 +60,6 @@ a {
 }
 
 .container {
-  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -1061,11 +1060,18 @@ a {
 .our-clients__link:hover, .our-clients__link:focus {
   border: 1px solid var(--accent-color);
 }
-.our-clients__item:not(:nth-last-child(-n+2)) {
-  margin-bottom: 30px;
+@media screen and (max-width: 479px) {
+  .our-clients__item:not(:nth-last-child(-n+1)) {
+    margin-bottom: 30px;
+  }
 }
-.our-clients__item:not(:nth-child(2n)) {
-  margin-right: 30px;
+@media screen and (min-width: 480px) {
+  .our-clients__item:not(:nth-last-child(-n+2)) {
+    margin-bottom: 30px;
+  }
+  .our-clients__item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .our-clients__item:not(:nth-last-child(-n+2)) {
