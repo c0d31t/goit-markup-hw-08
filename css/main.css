@@ -94,6 +94,7 @@ a {
 }
 .section_no-padding-top {
   padding-top: 0;
+  padding-bottom: 94px;
 }
 .section__title {
   font-weight: 700;

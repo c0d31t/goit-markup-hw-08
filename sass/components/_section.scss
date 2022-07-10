@@ -7,6 +7,7 @@
   }
   &_no-padding-top {
     padding-top: 0;
+    padding-bottom: 94px;
   }
   &__title {
     @include font(700, 28px, 33px, 0.03em);
